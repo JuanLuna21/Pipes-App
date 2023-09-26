@@ -15,6 +15,9 @@ export class BasicsPageComponent {
   public fullName: string = 'JuAN IgNaCIO';
 
 
+  public customDate: Date = new Date();
+
+
 
 
 }
