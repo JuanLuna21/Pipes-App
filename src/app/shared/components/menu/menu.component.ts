@@ -22,10 +22,12 @@ export class MenuComponent {
           {
             label: 'Numeros',
             icon: 'pi pi-dollar',
+            routerLink: 'numbers'
           },
           {
             label: 'No Comunes',
             icon: 'pi pi-globe',
+            routerLink: 'uncommon',
           },
           
         ]  
