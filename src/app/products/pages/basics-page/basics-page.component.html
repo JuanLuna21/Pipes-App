@@ -29,22 +29,48 @@
 
 <div class="col-12 md:col-6">
     <p-card header="titleclase">
-      <ul>
+      <ol>
         <li>Fecha | date</li>
         <li>Fecha {{customDate}}</li>
         <li>Fecha | date: 'short' </li>
-      </ul> 
+        <li>Fecha | date: 'long' </li>
+        <li>Fecha | date: 'MMMM' </li>
+        <li>Fecha | date: 'MMMM dd, yyyy' </li>
+        
+      </ol> 
+      <hr>
+      <ol>
+        
+            <li>Fecha | date: 'long':'GMT-6' </li>
+            <li>Fecha | date: 'long': 'GMT-4' </li>
+            <li>Fecha | date: 'long': '':'es-AR' </li>
+            <li>Fecha | date: 'long': '':'ru-UA' </li>
+       
+      </ol>
     </p-card>
 </div>
 
 
 <div class="col-12 md:col-6">
     <p-card header="titleclase">
-       <ul>
+       <ol>
         <li>{{customDate}}</li>
         <li>{{customDate}} | date </li>
         <li>{{customDate | date:'short'}}</li>
-       </ul>
+        <li>{{customDate | date:'long'}}</li>
+        <li>{{customDate | date:'MMMM'}}</li>
+        <li>{{customDate | date:'MMMM dd, yyyy'}}</li>
+       </ol>
+
+       <hr>
+      <ol>
+        
+        <li> {{customDate | date: 'long':'GMT-6'}} </li>
+        <li> {{customDate | date: 'long': 'GMT-4'}}</li>
+        <li> {{customDate | date: 'long': '':'es-AR'}}</li>
+        <li> {{customDate | date: 'long': '':'ru-UA'}}</li>
+
+      </ol>
     </p-card>
 </div>
 </div>
