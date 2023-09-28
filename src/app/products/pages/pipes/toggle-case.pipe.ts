@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from "@angular/core";
 })
 export class toggleClasePipe implements PipeTransform {
 
-    transform (value: string): string {
-        return value.toLocaleUpperCase();
+    transform ( value: string, toUpper: boolean = false): string {
+        return ( toUpper ) ? value.toLocaleUpperCase()
+                           : value.toLocaleLowerCase();
     }
 
 }
